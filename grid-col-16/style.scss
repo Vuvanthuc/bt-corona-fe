@@ -1,0 +1,69 @@
+$background-iteam: #333333;
+$background-body: #cccccc;
+$color-text: #fbfbfb;
+h2 {
+    width: 800px;
+    margin: 0 auto;
+    background-color: $background-body;
+}
+.row {
+    width: 800px;
+    margin: 0 auto;
+    background-color: $background-body;
+    display: flex;
+    @for $i from 1 to 17 {
+        .col-#{$i} {
+            flex: $i;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 3px;
+            background-color: $background-iteam;
+            color: $color-text;
+            text-align: center;
+            margin: 5px 3px;
+        }
+    }
+    [class$="reverse"] {
+        visibility: hidden;
+    }
+    @for $var from 1 to 17 {
+        .col-#{$var}:first-child {
+            margin-left: 0;
+        }
+        .col-#{$var}:last-child {
+            margin-right: 0;
+        }
+    }
+
+    @for $i from 1 to 6 {
+        .col-#{$i}__float   {
+            width: (1/$i) * 100%;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 3px;
+            background-color: $background-iteam;
+            color: $color-text;
+            text-align: center;
+            margin: 5px 3px;
+        }
+    }
+    @for $var from 1 to 6 {
+        .col-#{$var}__float:first-child {
+            margin-left: 0;
+        }
+        .col-#{$var}__float:last-child {
+            margin-right: 0;
+        }
+    }
+    .col-4__float {
+        width: 40%;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 3px;
+        background-color: $background-iteam;
+        color: $color-text;
+        text-align: center;
+        margin: 5px 3px;
+    }
+
+}
