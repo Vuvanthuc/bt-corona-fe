@@ -1,0 +1,80 @@
+$background-image: #cccccc;
+$text-image: #979797;
+$background-container: #ffffff;
+.container {
+    width: 750px;
+    margin: 0 auto;
+    background-color: $background-container;
+    .head {
+        display: flex;
+        &__image {
+            height: 250px;
+            text-align: center;
+            line-height: 250px;
+            color: $text-image;
+            flex: 2;
+            background-color: $background-image;
+            margin-right: 10px;
+            font-size: 3rem;
+            box-sizing: border-box;
+        }
+        &__text {
+            height: 250px;
+            flex: 1;
+            background-color: $background-container;
+            margin-left: 10px;
+            padding-top: 10px;
+            box-sizing: border-box;
+            &--title {
+                font-size: 1.3rem;
+            }
+            &--author {
+                color: #a8a8a8;
+                font-size: 0.9rem;
+            }
+        }
+    }
+    .content {
+        display: flex;
+        &__child {
+            flex: 1;
+            height: 150px;
+            text-align: center;
+            line-height: 150px;
+            background-color: $background-image;
+            color: $text-image;
+            margin: 10px;
+            font-size: 1.5rem;
+            box-sizing: border-box;
+        }
+        &__child:first-child {
+            margin-left: 0;
+        }
+        &__child:last-child {
+            margin-right: 0;
+        }
+    }
+    .footer {
+        display: flex;
+        &__text {
+            height: 250px;
+            flex: 1;
+            background-color: $background-container;
+            margin: 10px;
+            box-sizing: border-box;
+            &--title {
+                font-size: 1.3rem;
+            }
+            &--author {
+                color: #a8a8a8;
+                font-size: 0.9rem;
+            }
+        }
+        &__text:first-child {
+            margin-left: 0;
+        }
+        &__text:last-child {
+            margin-right: 0;
+        }
+    }
+}
