@@ -1,0 +1,169 @@
+$background-body: #d8aa96;
+$background-image: #807182;
+$background-info: #fac7c2;
+$background-click: #f7b1ab;
+
+body {
+    background-color: $background-body;
+}
+.content {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    display: flex;
+    &__image {
+        flex: 2;
+        background-color: $background-image;
+        height: 500px;
+        position: relative;
+        &--dog {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            left: 15%;
+            bottom: 0;
+        }
+        &--handdog {
+            position: absolute;
+            transform: rotate(-90deg);
+            left: 15%;
+            top: 40px;
+            width: 50px;
+            height: 50px;
+        }
+        &--text {
+            position: absolute;
+            top: 50px;
+            left: 35%;
+            font-size: 1.6rem;
+        }
+    }
+    &__info {
+        flex: 3;
+        background-color: $background-info;
+        position: relative;
+        .child {
+            margin: 30px;
+            .input {
+                display: flex;
+                justify-content: space-between;
+                &__left {
+                    &--gender {
+                        background-color: #ffffff;
+                        margin: 5px 5px 10px 0;
+                        padding: 8px;
+                        border: #e8e3e3 solid 1px;
+                        border-radius: 4px ;
+                        label {
+                            padding : 3px 10px;
+                            margin-left: -15px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                &__right {
+                    &--ulfile {
+                        position: relative;
+                        width: 200px;
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            position: absolute;
+                            cursor: pointer;
+                        }
+                        span {
+                            position: absolute;
+                            left: 50px;
+                            top: 30px;
+                            cursor: pointer;
+                        }
+                    }
+                    &--kind {
+                        background-color: #ffffff;
+                        margin: 5px 5px 10px 0;
+                        padding: 8px;
+                        border: #e8e3e3 solid 1px;
+                        border-radius: 4px ;
+                        label {
+                            padding : 3px 10px;
+                            margin-left: -15px;
+                            cursor: pointer;
+                        }
+                    }
+            }
+            }
+        }
+        .button {
+            width: 100%;
+            height: 60px;
+            background-color: #ffffff ;
+            position: absolute;
+            bottom: 0;
+            &__inner {
+                margin: 15px 30px ;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+}
+input[type='radio'], input[type='file'] {
+    visibility: hidden;
+}
+input[type='text'], input[type='datetime']  {
+    margin: 5px 5px 10px 0;
+    padding: 10px;
+    border: #e8e3e3 solid 1px;
+    border-radius: 4px ;
+}
+input[type=button] {
+    width: 95px;
+    height: 35px;
+    border-radius: 30px;
+    background-color: #ffffff;
+
+    border: 1px solid #d1d1d1;
+    cursor: pointer;
+}
+input[type=submit] {
+    width: 95px;
+    height: 35px;
+    background-color: #807182;
+    border-radius: 30px;
+    border: 1px solid #d1d1d1;
+    cursor: pointer;
+}
+#female:checked + label {
+    background-color: $background-click;
+    border: #de9f9a solid 1px;
+}
+#male:checked + label {
+    background-color: $background-click;
+    border: #de9f9a solid 1px;
+}
+#spayed:checked + label {
+    background-color: $background-click;
+    border: #de9f9a solid 1px;
+}
+#neutered:checked + label {
+    background-color: $background-click;
+    border: #de9f9a solid 1px;
+}
+#small:checked + label {
+    background-color: $background-click;
+    border: #de9f9a solid 1px;
+}
+#medium:checked + label {
+    background-color: $background-click;
+    border: #de9f9a solid 1px;
+}
+#large:checked + label {
+    background-color: $background-click;
+    border: #de9f9a solid 1px;
+}
+#XL:checked + label {
+    background-color: $background-click;
+    border: #de9f9a solid 1px;
+}
+}

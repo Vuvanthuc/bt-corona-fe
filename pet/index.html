@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pet</title>
+</head>
+<body>
+    <div class="content">
+        <div class="content__image">
+            <img src="./image/pet.png" alt="" class="content__image--dog">
+            <img src="./image/chancho.png" alt="" class="content__image--handdog">
+            <b class="content__image--text">PUPASSURE</b>
+        </div>
+        <div class="content__info">
+            <div class="child">
+                <h1>Yay, puppies! Ensure your pup gets the best care!</h1>
+                <form action="">
+                    <div class="input">
+                        <div class="input__left">
+                            <span>Name</span> <br>
+                            <input  type="text" name="" id="" placeholder="Pet's name"> <br>
+                            <span>Breed</span> <br>
+                            <input  type="text" name="" id="" placeholder="Pet's breed"> <br>
+                            <span>Gender</span>
+                            <div class="input__left--gender">
+                                <input type="radio" name="gender" id="female" value="female" checked>
+                                <label for="female">Female</label>
+                                <input type="radio" name="gender" id="male" value="male">
+                                <label for="male">Male</label>
+                            </div>
+
+                        </div>
+                        <div class="input__right">
+                            <div class="input__right--ulfile"> <br>
+                                <label for="ulfile">
+                                    <img src="/image/iconphoto.png" alt="">
+                                    <input type="file" name="ulfile" id="ulfile" >
+                                    <span>Up load a photo</span>
+                                </label>
+                            </div> <br> <br>
+                            <span>Birthday</span> <br>
+                            <input  type="datetime" name="" id="" placeholder="MM/DD/YY"> <br>
+                            <span>Spayed or Neutered</span> <br>
+                            <div class="input__right--kind">
+                                <input type="radio" name="kind" id="spayed" value="spayed" checked>
+                                <label for="spayed">Spayed</label>
+                                <input type="radio" name="kind" id="neutered" value="neutered">
+                                <label for="neutered">Neutered</label>
+                            </div>
+                        </div>
+                    </div>
+                    <span>Weight</span>
+                    <div class="input__weight">
+                        <div class="input__right--kind">
+                            <input type="radio" name="size" id="small" value="small" checked>
+                            <label for="small">0-25 Ibs</label>
+                            <input type="radio" name="size" id="medium" value="medium">
+                            <label for="medium">25-50 Ibs </label>
+                            <input type="radio" name="size" id="large" value="large">
+                            <label for="large">50-100 Ibs</label>
+                            <input type="radio" name="size" id="XL" value="XL">
+                            <label for="XL">100+ Ibs</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="button">
+                <div class="button__inner">
+                    <input type="button" value="Back">
+                    <input type="submit" value="Next">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
